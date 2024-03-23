@@ -1,0 +1,60 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .center {
+    font-size: 80px;
+    color: black; /* Cambiado a color rojo */
+  }
+  
+  .card .suit {
+    position: absolute;
+    font-size: 40px;
+  }
+  
+  .card .top-left {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .card .bottom-right {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .card.hearts .suit:before {
+    color: red;
+    content: '♥';
+  }
+  
+  .card.clubs .suit:before {
+    color: black;
+    content: '♣';
+  }
+  
+  .card.diamonds .suit:before {
+    color: red;
+    content: '♦';
+  }
+  
+  .card.spades .suit:before {
+    color: black;
+    content: '♠';
+  }
